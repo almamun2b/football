@@ -1,0 +1,504 @@
+/* ----------------------------------
+    Google Font 
+----------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* ----------------------------------
+    Common Styles or Utilities
+----------------------------------- */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 677px;
+  background-color: #2d25a0;
+}
+
+.containers {
+  padding: 42px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #e02c6d;
+  border-radius: 5px;
+}
+
+/* ------------------------------
+    Navigation Bar styles
+------------------------------ */
+.navbar {
+  width: 100%;
+  height: 44px;
+  margin-bottom: 45px;
+}
+
+.nav-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items span a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 5px 18px;
+}
+
+.login-icon {
+  padding-right: 10px;
+}
+
+/* ----------------------------------
+    features Styles
+----------------------------------- */
+
+.features {
+  width: 100%;
+}
+
+.features-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-half {
+  width: 50%;
+}
+
+.features-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.features-image {
+  width: 550px;
+  height: 438px;
+}
+
+@keyframes sliding {
+  0% {
+    bottom: 328px;
+  }
+  100% {
+    bottom: 460px;
+  }
+}
+
+.football {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  position: relative;
+  bottom: 328px;
+
+  animation: sliding 2s ease-in-out 0.5s infinite alternate;
+  animation-play-state: running;
+}
+
+.features-intro:hover .football {
+  animation: sliding 0.5s ease-in-out 0.5s infinite alternate;
+}
+
+.intro-half a,
+.highlights-half a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 5px 20px;
+}
+
+.features-button-icon {
+  padding-left: 5px;
+}
+
+/* ----------------------------------
+    players Styles
+----------------------------------- */
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.player {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid lightgray;
+  box-shadow: 5px 5px 20px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player .player-detail {
+  text-align: justify;
+}
+
+.player h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.player p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.player img {
+  width: 100%;
+  height: 256px;
+}
+
+/* ----------------------------------
+    highlights Styles
+----------------------------------- */
+
+.highlights {
+  width: 100%;
+}
+
+.highlights-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.highlights-half {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.highlights-title,
+.video-galary-title,
+.news-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.highlights-detail {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.highlights-image {
+  width: 560px;
+  height: 420px;
+}
+
+.highlights-half a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 5px 20px;
+}
+
+.highlights-button-icon {
+  padding-left: 5px;
+}
+
+/* ----------------------------------
+    Videos
+----------------------------------- */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.video-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ----------------------------------
+    news
+----------------------------------- */
+.news-title {
+  text-align: center;
+}
+
+.all-news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.news {
+  padding: 20px;
+  border: 1px solid lightgray;
+  box-shadow: 5px 5px 20px gray;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-image img {
+  width: 300px;
+  height: 256px;
+}
+
+.news-details {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.news a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* ----------------------------------
+    footer Styles
+----------------------------------- */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer-logo img {
+  width: 256px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link a {
+  font-size: 20px;
+  padding: 5px;
+}
+.facebook {
+  color: #4267b2;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.linkedin {
+  color: #0072b1;
+}
+
+.pinterest {
+  color: #e60023;
+}
+.youtube {
+  color: #ff0000;
+}
+
+.copyright {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* ----------------------------------
+    Media Queries 
+    Mobile Devices
+----------------------------------- */
+
+@media only screen and (max-width: 688px) {
+  .navbar {
+    display: none;
+  }
+
+  .button {
+    width: 120px;
+  }
+
+  .containers {
+    padding: 50px;
+  }
+
+  header {
+    width: 100%;
+    height: 700px;
+  }
+
+  .features-title,
+  .highlights-title {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .news-title,
+  .video-galary-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .features-image,
+  .highlights-image,
+  .news img {
+    width: 330px;
+    height: 260px;
+  }
+
+  .features-intro,
+  .highlights-intro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+
+  .intro-half,
+  .highlights-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .players,
+  .videos,
+  .all-news {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+
+  .video-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 300px;
+    height: 250px;
+  }
+
+  @keyframes sliding {
+    0% {
+      bottom: 189px;
+    }
+    100% {
+      bottom: 300px;
+    }
+  }
+
+  .football {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    position: relative;
+    bottom: 189px;
+
+    animation: sliding 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+  }
+}
+
+/* ----------------------------------
+    Media Queries 
+    Tablet Devices
+----------------------------------- */
+
+@media only screen and (min-width: 688px) and (max-width: 1100px) {
+  .navbar {
+    display: none;
+  }
+
+  .containers {
+    padding: 50px;
+  }
+
+  header {
+    width: 100%;
+    height: 700px;
+    background-color: #2d25a0;
+  }
+
+  .button {
+    width: 120px;
+  }
+
+  .features-title,
+  .highlights-title {
+    font-size: 36px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .features-image,
+  .highlights-image {
+    width: 550px;
+    height: 450px;
+  }
+
+  .news img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .features-intro,
+  .highlights-intro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    align-content: center;
+  }
+
+  .intro-half,
+  .highlights-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .highlights-detail {
+    width: 100%;
+  }
+
+  .player {
+    width: 250px;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .videos,
+  .all-news {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .video-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
